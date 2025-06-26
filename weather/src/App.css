@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom right, #74ebd5, #9face6);
+  color: #333;
+  min-height: 100vh;
+}
+
+.App {
+  max-width: 600px;
+  margin: auto;
+  padding: 30px 20px;
+  background: rgba(255, 255, 255, 0.95);
+  margin-top: 60px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #2b2e4a;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+input[type="text"] {
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  width: 60%;
+  min-width: 200px;
+}
+
+button {
+  background-color: #304ffe;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1e40ff;
+}
+
+.weather-card {
+  background: #f7f8fa;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.weather-card h2 {
+  margin: 0 0 10px;
+}
+
+.forecast-chart {
+  background: white;
+  border-radius: 10px;
+  margin-top: 30px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 600px) {
+  input[type="text"], button {
+    width: 100%;
+  }
+
+  form {
+    flex-direction: column;
+  }
+}
+
